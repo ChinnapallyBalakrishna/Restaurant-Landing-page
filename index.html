@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+           <div class="nav-1">
+            <div class="logo">CollegegesResto</div>
+            <ul class="links">
+                <li>Home</li>
+                <li>Menu</li>
+                <li>About</li>
+                <li>Location</li>
+                <li>Contact</li>
+            </ul>
+           </div>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="left">
+                <span class="left1">Are You Hungry?</span>
+                <span class="left2">Don't Wait</span>
+                <span class="left3">Let to order food now</span>
+                <span class="left4">Check out Menu</span>
+            </div>
+            <div class="food" id="food"></div>
+            </div>
+            <div class="items">
+                <div id="food1"></div>
+                <div id="food2"></div>
+                <div id="food3"></div>
+                <div id="food4"></div>
+            </div>
+        </div>
+    </div>
+        <script>
+            let food = document.getElementById("food");
+            let food1 = document.getElementById("food1");
+            let food2 = document.getElementById("food2");
+            let food3 = document.getElementById("food3");
+            let food4 = document.getElementById("food4");
+
+            food1.addEventListener('click', () => {
+            food.style.backgroundImage = "url(https://c4.wallpaperflare.com/wallpaper/234/543/684/food-pizza-wallpaper-preview.jpg)";
+            });
+
+            food2.addEventListener('click', () => {
+            food.style.backgroundImage = "url(https://images.unsplash.com/photo-1585032226651-759b368d7246?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bm9vZGxlc3xlbnwwfHwwfHx8MA%3D%3D)";
+            });
+
+            food3.addEventListener('click', () => {
+            food.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLQzQqVBk7LmMbMSaEuRy3AkVv1lyGqThm4Q&s)";
+            });
+            food4.addEventListener('click', () => {
+            food.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShwnj57-x3fpKBarH7AU0zXVO695ka8-kAdA&s)";
+            });
+        </script>
+</body>
+</html>
